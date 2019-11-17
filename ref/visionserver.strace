@@ -1,0 +1,1144 @@
+strace: Process 392 attached
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,7.67,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4238, MSG_NOSIGNAL) = 4238
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=997276})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=167784}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.44,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=178876}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,7.70,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999984})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=189967}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,6.54,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4225, MSG_NOSIGNAL) = 4225
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=996753})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=201058}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+brk(0x9f1000)                           = 0x9f1000
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.82,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999992})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=212150}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,6.39,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999305})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=223241}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+brk(0xa29000)                           = 0xa29000
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,8.51,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=997839})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=234332}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.64,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4244, MSG_NOSIGNAL) = 4244
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999989})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=245424}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,6.62,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999515})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=256515}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.65,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=994660})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=267606}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+brk(0xa62000)                           = 0xa62000
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,8.02,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=278698}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,6.51,9.67,14.05,2.07,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4235, MSG_NOSIGNAL) = 4235
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999992})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=289789}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.34,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=998231})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=300880}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.41,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=311971}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,7.94,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=323063}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.56,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=996363})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=334154}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.51,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4235, MSG_NOSIGNAL) = 4235
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999991})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=345245}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,6.35,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=998756})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=356336}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,7.29,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=997145})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=367428}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.52,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4236, MSG_NOSIGNAL) = 4236
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=378519}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+brk(0x9f1000)                           = 0x9f1000
+write(-1, "t:1.00,7.10,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999300})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=389610}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+open("/sys/devices/virtual/thermal/thermal_zone0/temp", O_RDONLY) = 8
+fstat64(8, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(8, "56382\n", 4096)                = 6
+close(8)                                = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,7.07,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=996045})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=400701}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+brk(0xa29000)                           = 0xa29000
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,7.85,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=411793}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,6.14,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4224, MSG_NOSIGNAL) = 4224
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999991})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=422884}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.49,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=994839})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=433975}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.71,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999991})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=445067}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+brk(0xa62000)                           = 0xa62000
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,8.06,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999991})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=456158}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.61,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4222, MSG_NOSIGNAL) = 4222
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=467249}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.43,9.67,14.05,2.07,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999992})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=478342}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,6.78,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999822})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=489432}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,7.44,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=997701})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=500523}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.50,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4222, MSG_NOSIGNAL) = 4222
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999991})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=511615}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.43,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999989})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=522706}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,6.45,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=996279})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=533797}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,7.23,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999952})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=544889}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.90,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4227, MSG_NOSIGNAL) = 4227
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999989})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=555980}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+brk(0x9f1000)                           = 0x9f1000
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.17,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+socket(AF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 8
+bind(8, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+getsockname(8, {sa_family=AF_NETLINK, nl_pid=392, nl_groups=00000000}, [12]) = 0
+sendto(8, {{len=20, type=0x12 /* NLMSG_??? */, flags=NLM_F_REQUEST|0x300, seq=1574024494, pid=0}, "\0\0\0\0"}, 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+recvmsg(8, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=1276, type=0x10 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1574024494, pid=392}, "\0\0\4\3\1\0\0\0I\0\1\0\0\0\0\0\7\0\3\0lo\0\0\10\0\r\0\350\3\0\0"...}, {{len=1284, type=0x10 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1574024494, pid=392}, "\0\0\1\0\2\0\0\0C\20\1\0\0\0\0\0\t\0\3\0eth0\0\0\0\0\10\0\r\0"...}, {{len=0, type=0 /* NLMSG_??? */, flags=0, seq=0, pid=0}}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 2560
+recvmsg(8, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=20, type=NLMSG_DONE, flags=NLM_F_MULTI, seq=1574024494, pid=392}, "\0\0\0\0"}, {{len=1, type=0x49 /* NLMSG_??? */, flags=NLM_F_REQUEST, seq=0, pid=196615}}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+sendto(8, {{len=20, type=0x16 /* NLMSG_??? */, flags=NLM_F_REQUEST|0x300, seq=1574024495, pid=0}, "\0\0\0\0"}, 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+recvmsg(8, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=76, type=0x14 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1574024495, pid=392}, "\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1\10\0\2\0\177\0\0\1\7\0\3\0lo\0\0"...}, {{len=88, type=0x14 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1574024495, pid=392}, "\2\10\200\0\2\0\0\0\10\0\1\0\n\6`\v\10\0\2\0\n\6`\v\10\0\4\0\n\377\377\377"...}, {{len=0, type=0 /* NLMSG_??? */, flags=0, seq=0, pid=0}}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+recvmsg(8, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=72, type=0x14 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1574024495, pid=392}, "\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\1\24\0\6\0"...}, {{len=72, type=0x14 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1574024495, pid=392}, "\n@\200\375\2\0\0\0\24\0\1\0\376\200\0\0\0\0\0\0y\221\372\320\25+\227{\24\0\6\0"...}, {{len=393236, type=0xffff /* NLMSG_??? */, flags=NLM_F_REQUEST|NLM_F_MULTI|NLM_F_ACK|NLM_F_ECHO|NLM_F_DUMP_INTR|NLM_F_DUMP_FILTERED|0xffc0, seq=4294967295, pid=1182}, "\236\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"...}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 144
+recvmsg(8, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=20, type=NLMSG_DONE, flags=NLM_F_MULTI, seq=1574024495, pid=392}, "\0\0\0\0"}, {{len=1, type=0x14 /* NLMSG_??? */, flags=NLM_F_REQUEST, seq=0, pid=0}}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+close(8)                                = 0
+pipe2([8, 9], O_CLOEXEC)                = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x76ef7c98) = 14770
+futex(0x74c00010, FUTEX_WAKE_PRIVATE, 1) = 1
+close(9)                                = 0
+fcntl64(8, F_SETFD, 0)                  = 0
+fstat64(8, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+read(8, "10.6.96.254\n", 4096)          = 12
+read(8, "", 4096)                       = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=14770, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+close(8)                                = 0
+wait4(14770, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 14770
+pipe2([8, 9], O_CLOEXEC)                = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x76ef7c98) = 14775
+close(9)                                = 0
+fcntl64(8, F_SETFD, 0)                  = 0
+fstat64(8, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+read(8, "interface eth0\n", 4096)       = 15
+read(8, "", 4096)                       = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=14775, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+close(8)                                = 0
+wait4(14775, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 14775
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999988})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=567071}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+socket(AF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 8
+bind(8, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+getsockname(8, {sa_family=AF_NETLINK, nl_pid=392, nl_groups=00000000}, [12]) = 0
+sendto(8, {{len=20, type=0x12 /* NLMSG_??? */, flags=NLM_F_REQUEST|0x300, seq=1574024494, pid=0}, "\0\0\0\0"}, 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+recvmsg(8, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=1276, type=0x10 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1574024494, pid=392}, "\0\0\4\3\1\0\0\0I\0\1\0\0\0\0\0\7\0\3\0lo\0\0\10\0\r\0\350\3\0\0"...}, {{len=1284, type=0x10 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1574024494, pid=392}, "\0\0\1\0\2\0\0\0C\20\1\0\0\0\0\0\t\0\3\0eth0\0\0\0\0\10\0\r\0"...}, {{len=0, type=0 /* NLMSG_??? */, flags=NLM_F_DUMP_INTR|NLM_F_DUMP_FILTERED|0x3fc0, seq=0, pid=0}}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 2560
+recvmsg(8, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=20, type=NLMSG_DONE, flags=NLM_F_MULTI, seq=1574024494, pid=392}, "\0\0\0\0"}, {{len=1, type=0x49 /* NLMSG_??? */, flags=NLM_F_REQUEST, seq=0, pid=196615}}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+sendto(8, {{len=20, type=0x16 /* NLMSG_??? */, flags=NLM_F_REQUEST|0x300, seq=1574024495, pid=0}, "\0\0\0\0"}, 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+recvmsg(8, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=76, type=0x14 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1574024495, pid=392}, "\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1\10\0\2\0\177\0\0\1\7\0\3\0lo\0\0"...}, {{len=88, type=0x14 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1574024495, pid=392}, "\2\10\200\0\2\0\0\0\10\0\1\0\n\6`\v\10\0\2\0\n\6`\v\10\0\4\0\n\377\377\377"...}, {{len=0, type=0 /* NLMSG_??? */, flags=0, seq=0, pid=0}}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+recvmsg(8, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=72, type=0x14 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1574024495, pid=392}, "\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\1\24\0\6\0"...}, {{len=72, type=0x14 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1574024495, pid=392}, "\n@\200\375\2\0\0\0\24\0\1\0\376\200\0\0\0\0\0\0y\221\372\320\25+\227{\24\0\6\0"...}, {{len=393236, type=0xffff /* NLMSG_??? */, flags=NLM_F_REQUEST|NLM_F_MULTI|NLM_F_ACK|NLM_F_ECHO|NLM_F_DUMP_INTR|NLM_F_DUMP_FILTERED|0xffc0, seq=4294967295, pid=1182}, "\236\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"...}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 144
+recvmsg(8, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=20, type=NLMSG_DONE, flags=NLM_F_MULTI, seq=1574024495, pid=392}, "\0\0\0\0"}, {{len=1, type=0x14 /* NLMSG_??? */, flags=NLM_F_REQUEST, seq=0, pid=0}}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+close(8)                                = 0
+write(-1, "t:1.00,7.08,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=777806}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+brk(0xa29000)                           = 0xa29000
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,7.85,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999989})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=811080}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.59,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4233, MSG_NOSIGNAL) = 4233
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=833262}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.51,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999991})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=844353}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,6.50,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999989})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=855444}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+brk(0xa62000)                           = 0xa62000
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,7.80,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999991})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=866536}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.60,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4222, MSG_NOSIGNAL) = 4222
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=877628}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.50,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999992})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=888718}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,6.56,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=899810}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,7.31,9.67,14.05,2.07,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999988})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=910902}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.53,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4200, MSG_NOSIGNAL) = 4200
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999989})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=921992}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,5.45,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999790})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1708, tv_usec=933083}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.64,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999988})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=132726}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,7.36,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=143818}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.53,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4222, MSG_NOSIGNAL) = 4222
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=154909}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+brk(0x9f1000)                           = 0x9f1000
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,7.04,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=166000}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+open("/sys/devices/virtual/thermal/thermal_zone0/temp", O_RDONLY) = 8
+fstat64(8, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(8, "55844\n", 4096)                = 6
+close(8)                                = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,7.30,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999991})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=177092}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+brk(0xa29000)                           = 0xa29000
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,8.16,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999992})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=188183}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.62,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4224, MSG_NOSIGNAL) = 4224
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=199274}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.55,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=210366}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,6.24,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=221457}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+brk(0xa62000)                           = 0xa62000
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,8.50,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=232548}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.83,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4227, MSG_NOSIGNAL) = 4227
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=243640}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.78,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=254731}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,6.52,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=996819})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=265822}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,7.24,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=276914}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.65,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4219, MSG_NOSIGNAL) = 4219
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=288005}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,5.51,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=299096}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.37,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=532013}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,7.36,9.66,13.95,2.09,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999747})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=543105}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.57,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4230, MSG_NOSIGNAL) = 4230
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=554196}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+brk(0x9f1000)                           = 0x9f1000
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,7.24,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=565287}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.56,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=576378}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+brk(0xa29000)                           = 0xa29000
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,8.03,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999991})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=587469}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,6.65,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4229, MSG_NOSIGNAL) = 4229
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=598561}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.56,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=609652}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,6.29,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999992})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=620744}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+brk(0xa62000)                           = 0xa62000
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,7.65,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999991})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=631834}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,6.59,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4228, MSG_NOSIGNAL) = 4228
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=642926}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,5.42,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999988})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=654017}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,6.38,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=864752}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,7.66,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999989})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=875843}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,6.73,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4237, MSG_NOSIGNAL) = 4237
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=886934}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.56,9.67,14.05,2.07,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999989})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=898025}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,6.51,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999991})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=909117}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,7.38,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=920208}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x758f1794, FUTEX_WAIT_PRIVATE, 2, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x758f1794, FUTEX_WAKE_PRIVATE, 1) = 0
+write(-1, "t:1.00,6.73,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4237, MSG_NOSIGNAL) = 4237
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=997176})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=931299}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+brk(0x9f1000)                           = 0x9f1000
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,7.26,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999992})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=942391}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+open("/sys/devices/virtual/thermal/thermal_zone0/temp", O_RDONLY) = 8
+fstat64(8, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(8, "55844\n", 4096)                = 6
+close(8)                                = 0
+write(-1, "t:1.00,7.11,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=953482}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+brk(0xa29000)                           = 0xa29000
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,8.23,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=998378})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=964573}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.50,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4202, MSG_NOSIGNAL) = 4202
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=975665}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,6.53,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999286})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=986756}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.49,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=995810})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1709, tv_usec=997847}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+brk(0xa62000)                           = 0xa62000
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,7.88,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999989})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=8939}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,6.50,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4198, MSG_NOSIGNAL) = 4198
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999989})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=20030}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,5.52,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=31121}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,6.53,9.66,13.95,2.09,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=230764}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,7.34,9.66,13.95,2.09,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=241856}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,6.37,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4199, MSG_NOSIGNAL) = 4199
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999989})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=252947}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.31,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999988})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=264038}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,6.55,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999989})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=275130}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.99,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=286221}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,6.60,9.66,13.95,2.09,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4204, MSG_NOSIGNAL) = 4204
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999989})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=297312}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+brk(0x9f1000)                           = 0x9f1000
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,7.07,9.66,13.95,2.09,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999992})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=308404}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,7.21,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=319495}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+brk(0xa29000)                           = 0xa29000
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,7.72,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=998637})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=330586}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.51,9.66,13.95,2.09,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4207, MSG_NOSIGNAL) = 4207
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=341677}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,6.22,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999472})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=352768}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.22,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=995535})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=363860}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+brk(0xa62000)                           = 0xa62000
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,7.68,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=374951}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,7.53,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4203, MSG_NOSIGNAL) = 4203
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=386042}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,7.05,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999987})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=397133}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,5.89,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=618961}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,7.72,9.66,13.95,2.09,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999987})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=630051}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,5.72,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999992})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=641142}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,5.44,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4199, MSG_NOSIGNAL) = 4199
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=652234}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,5.49,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999989})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=663324}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.13,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=674416}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,5.58,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999988})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=685507}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+brk(0x9f1000)                           = 0x9f1000
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,5.93,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4212, MSG_NOSIGNAL) = 4212
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=997878})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=696598}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+open("/sys/devices/virtual/thermal/thermal_zone0/temp", O_RDONLY) = 8
+fstat64(8, {st_mode=S_IFREG|0444, st_size=4096, ...}) = 0
+read(8, "56382\n", 4096)                = 6
+close(8)                                = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.08,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999674})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=707690}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+brk(0xa29000)                           = 0xa29000
+write(-1, "t:1.00,6.37,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=997824})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=718781}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,5.46,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4223, MSG_NOSIGNAL) = 4223
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=994911})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=729872}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,5.46,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999445})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=740963}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,5.51,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=997330})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=752055}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+brk(0xa62000)                           = 0xa62000
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.50,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=994980})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=763146}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,5.53,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4232, MSG_NOSIGNAL) = 4232
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999989})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=774237}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,5.52,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=785329}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,5.42,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=973881}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.21,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+socket(AF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 8
+bind(8, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+getsockname(8, {sa_family=AF_NETLINK, nl_pid=392, nl_groups=00000000}, [12]) = 0
+sendto(8, {{len=20, type=0x12 /* NLMSG_??? */, flags=NLM_F_REQUEST|0x300, seq=1574024496, pid=0}, "\0\0\0\0"}, 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+recvmsg(8, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=1276, type=0x10 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1574024496, pid=392}, "\0\0\4\3\1\0\0\0I\0\1\0\0\0\0\0\7\0\3\0lo\0\0\10\0\r\0\350\3\0\0"...}, {{len=1284, type=0x10 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1574024496, pid=392}, "\0\0\1\0\2\0\0\0C\20\1\0\0\0\0\0\t\0\3\0eth0\0\0\0\0\10\0\r\0"...}, {{len=8836872, type=0xd708 /* NLMSG_??? */, flags=NLM_F_MULTI|NLM_F_ACK|0x80, seq=28812, pid=1971475172}, "\0\200\16\0(\22\217u|\0\0\0X\204\3\0\0\0\0\0\21\16\0\0\7\0\0\0\0\20\217u"...}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 2560
+recvmsg(8, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=20, type=NLMSG_DONE, flags=NLM_F_MULTI, seq=1574024496, pid=392}, "\0\0\0\0"}, {{len=1, type=0x49 /* NLMSG_??? */, flags=NLM_F_REQUEST, seq=0, pid=196615}}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+sendto(8, {{len=20, type=0x16 /* NLMSG_??? */, flags=NLM_F_REQUEST|0x300, seq=1574024497, pid=0}, "\0\0\0\0"}, 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+recvmsg(8, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=76, type=0x14 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1574024497, pid=392}, "\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1\10\0\2\0\177\0\0\1\7\0\3\0lo\0\0"...}, {{len=88, type=0x14 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1574024497, pid=392}, "\2\10\200\0\2\0\0\0\10\0\1\0\n\6`\v\10\0\2\0\n\6`\v\10\0\4\0\n\377\377\377"...}, {{len=0, type=0 /* NLMSG_??? */, flags=0, seq=0, pid=0}}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+recvmsg(8, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=72, type=0x14 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1574024497, pid=392}, "\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\1\24\0\6\0"...}, {{len=72, type=0x14 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1574024497, pid=392}, "\n@\200\375\2\0\0\0\24\0\1\0\376\200\0\0\0\0\0\0y\221\372\320\25+\227{\24\0\6\0"...}, {{len=393236, type=0xffff /* NLMSG_??? */, flags=NLM_F_REQUEST|NLM_F_MULTI|NLM_F_ACK|NLM_F_ECHO|NLM_F_DUMP_INTR|NLM_F_DUMP_FILTERED|0xffc0, seq=4294967295, pid=1182}, "\236\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"...}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 144
+recvmsg(8, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=20, type=NLMSG_DONE, flags=NLM_F_MULTI, seq=1574024497, pid=392}, "\0\0\0\0"}, {{len=1, type=0x14 /* NLMSG_??? */, flags=NLM_F_REQUEST, seq=0, pid=0}}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+close(8)                                = 0
+pipe2([8, 9], O_CLOEXEC)                = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x76ef7c98) = 14778
+close(9)                                = 0
+fcntl64(8, F_SETFD, 0)                  = 0
+fstat64(8, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+read(8, "10.6.96.254\n", 4096)          = 12
+read(8, "", 4096)                       = 0
+close(8)                                = 0
+wait4(14778, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 14778
+pipe2([8, 9], O_CLOEXEC)                = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x76ef7c98) = 14783
+close(9)                                = 0
+fcntl64(8, F_SETFD, 0)                  = 0
+fstat64(8, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+read(8, "interface eth0\n", 4096)       = 15
+read(8, "", 4096)                       = 0
+close(8)                                = 0
+wait4(14783, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 14783
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999987})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=984972}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+socket(AF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 8
+bind(8, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+getsockname(8, {sa_family=AF_NETLINK, nl_pid=392, nl_groups=00000000}, [12]) = 0
+sendto(8, {{len=20, type=0x12 /* NLMSG_??? */, flags=NLM_F_REQUEST|0x300, seq=1574024496, pid=0}, "\0\0\0\0"}, 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+recvmsg(8, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=1276, type=0x10 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1574024496, pid=392}, "\0\0\4\3\1\0\0\0I\0\1\0\0\0\0\0\7\0\3\0lo\0\0\10\0\r\0\350\3\0\0"...}, {{len=1284, type=0x10 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1574024496, pid=392}, "\0\0\1\0\2\0\0\0C\20\1\0\0\0\0\0\t\0\3\0eth0\0\0\0\0\10\0\r\0"...}, {{len=0, type=0 /* NLMSG_??? */, flags=NLM_F_DUMP_INTR|NLM_F_DUMP_FILTERED|0x3fc0, seq=0, pid=0}}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 2560
+recvmsg(8, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=20, type=NLMSG_DONE, flags=NLM_F_MULTI, seq=1574024496, pid=392}, "\0\0\0\0"}, {{len=1, type=0x49 /* NLMSG_??? */, flags=NLM_F_REQUEST, seq=0, pid=196615}}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+sendto(8, {{len=20, type=0x16 /* NLMSG_??? */, flags=NLM_F_REQUEST|0x300, seq=1574024497, pid=0}, "\0\0\0\0"}, 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+recvmsg(8, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=76, type=0x14 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1574024497, pid=392}, "\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1\10\0\2\0\177\0\0\1\7\0\3\0lo\0\0"...}, {{len=88, type=0x14 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1574024497, pid=392}, "\2\10\200\0\2\0\0\0\10\0\1\0\n\6`\v\10\0\2\0\n\6`\v\10\0\4\0\n\377\377\377"...}, {{len=0, type=0 /* NLMSG_??? */, flags=0, seq=0, pid=0}}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+recvmsg(8, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=72, type=0x14 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1574024497, pid=392}, "\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\1\24\0\6\0"...}, {{len=72, type=0x14 /* NLMSG_??? */, flags=NLM_F_MULTI, seq=1574024497, pid=392}, "\n@\200\375\2\0\0\0\24\0\1\0\376\200\0\0\0\0\0\0y\221\372\320\25+\227{\24\0\6\0"...}, {{len=393236, type=0xffff /* NLMSG_??? */, flags=NLM_F_REQUEST|NLM_F_MULTI|NLM_F_ACK|NLM_F_ECHO|NLM_F_DUMP_INTR|NLM_F_DUMP_FILTERED|0xffc0, seq=4294967295, pid=1182}, "\236\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"...}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 144
+recvmsg(8, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=20, type=NLMSG_DONE, flags=NLM_F_MULTI, seq=1574024497, pid=392}, "\0\0\0\0"}, {{len=1, type=0x14 /* NLMSG_??? */, flags=NLM_F_REQUEST, seq=0, pid=0}}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+close(8)                                = 0
+write(-1, "t:1.00,5.68,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4225, MSG_NOSIGNAL) = 4225
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1710, tv_usec=996063}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,5.46,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1711, tv_usec=29337}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,5.42,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999991})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1711, tv_usec=40428}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.21,9.67,14.05,2.07,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999989})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1711, tv_usec=51519}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,5.47,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4217, MSG_NOSIGNAL) = 4217
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1711, tv_usec=62611}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+brk(0x9f1000)                           = 0x9f1000
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.26,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1711, tv_usec=73702}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,5.46,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999990})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1711, tv_usec=84793}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+brk(0xa29000)                           = 0xa29000
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.68,9.67,14.05,2.07,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=996909})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1711, tv_usec=95885}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,5.49,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4228, MSG_NOSIGNAL) = 4228
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999991})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1711, tv_usec=106976}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,5.47,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=998278})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1711, tv_usec=118068}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,5.47,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=994926})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1711, tv_usec=129158}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+brk(0xa62000)                           = 0xa62000
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,6.50,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=999558})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1711, tv_usec=140250}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+write(-1, "t:1.00,5.52,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(13, [12], NULL, NULL, {tv_sec=10, tv_usec=0}) = 1 (in [12], left {tv_sec=9, tv_usec=997464})
+ioctl(12, VIDIOC_DQBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=230400, flags=V4L2_BUF_FLAG_MAPPED|0x2000, timestamp = {tv_sec=1711, tv_usec=151341}, ...}) = 0
+ioctl(12, VIDIOC_QBUF, {type=V4L2_BUF_TYPE_VIDEO_CAPTURE, index=0, memory=V4L2_MEMORY_MMAP, m.offset=0, length=230400, bytesused=0, flags=V4L2_BUF_FLAG_MAPPED|V4L2_BUF_FLAG_QUEUED|0x2000, ...}) = 0
+futex(0x7f6a34, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f6a30, FUTEX_OP_SET<<28|0<<12|FUTEX_OP_CMP_GT<<24|0x1) = 1
+write(-1, "t:1.00,5.41,9.66,13.95,2.04,-84."..., 36) = -1 EBADF (Bad file descriptor)
+_newselect(8, [7], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+_newselect(11, [6 10], NULL, NULL, {tv_sec=0, tv_usec=0}) = 0 (Timeout)
+send(10, "--boundarydonotcross\r\nContent-Ty"..., 95, MSG_NOSIGNAL) = 95
+send(10, "\377\330\377\340\0\20JFIF\0\1\1\0\0\1\0\1\0\0\377\333\0C\0\n\7\7\10\7\6\n"..., 4229, MSG_NOSIGNAL

@@ -1,0 +1,54 @@
+COMMAND   PID USER   FD      TYPE     DEVICE SIZE/OFF   NODE NAME
+visionser 392 root  cwd       DIR      179,2     4096 126483 /home/pi/visionserver
+visionser 392 root  rtd       DIR      179,2     4096      2 /
+visionser 392 root  txt       REG      179,2   453388 131252 /home/pi/visionserver/visionserver
+visionser 392 root  mem       CHR       81,0           10858 /dev/video0
+visionser 392 root  mem       REG      179,2    30156  56122 /usr/lib/arm-linux-gnueabihf/libOpenCL.so.1.0.0
+visionser 392 root  mem       REG      179,2    75608   1970 /lib/arm-linux-gnueabihf/libresolv-2.24.so
+visionser 392 root  mem       REG      179,2    18012   1944 /lib/arm-linux-gnueabihf/libnss_dns-2.24.so
+visionser 392 root  mem       REG      179,2     9572   1949 /lib/arm-linux-gnueabihf/libnss_mdns4_minimal.so.2
+visionser 392 root  mem       REG      179,2    38560   1945 /lib/arm-linux-gnueabihf/libnss_files-2.24.so
+visionser 392 root  mem       REG      179,2   169316  10562 /usr/lib/arm-linux-gnueabihf/libpng16.so.16.28.0
+visionser 392 root  mem       REG      179,2   390636 141237 /usr/local/lib/libopencv_flann.so.3.4.3
+visionser 392 root  mem       REG      179,2   850168 141243 /usr/local/lib/libopencv_photo.so.3.4.3
+visionser 392 root  mem       REG      179,2    30276   1911 /lib/arm-linux-gnueabihf/libcrypt-2.24.so
+visionser 392 root  mem       REG      179,2    26632   1971 /lib/arm-linux-gnueabihf/librt-2.24.so
+visionser 392 root  mem       REG      179,2     9800   1915 /lib/arm-linux-gnueabihf/libdl-2.24.so
+visionser 392 root  mem       REG      179,2  1234700   1906 /lib/arm-linux-gnueabihf/libc-2.24.so
+visionser 392 root  mem       REG      179,2   127300   1967 /lib/arm-linux-gnueabihf/libpthread-2.24.so
+visionser 392 root  mem       REG      179,2   116372   1921 /lib/arm-linux-gnueabihf/libgcc_s.so.1
+visionser 392 root  mem       REG      179,2   452152   1933 /lib/arm-linux-gnueabihf/libm-2.24.so
+visionser 392 root  mem       REG      179,2  1269620  10583 /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.22
+visionser 392 root  mem       REG      179,2  1421212 141233 /usr/local/lib/libopencv_calib3d.so.3.4.3
+visionser 392 root  mem       REG      179,2  4621040 136434 /usr/local/wpilib/lib/libwpiutil.so
+visionser 392 root  mem       REG      179,2  3171580 136744 /usr/local/wpilib/lib/libntcore.so
+visionser 392 root  mem       REG      179,2   740060 141236 /usr/local/lib/libopencv_features2d.so.3.4.3
+visionser 392 root  mem       REG      179,2   235924 141248 /usr/local/lib/libopencv_videoio.so.3.4.3
+visionser 392 root  mem       REG      179,2  2918284 141239 /usr/local/lib/libopencv_imgcodecs.so.3.4.3
+visionser 392 root  mem       REG      179,2  3882652 141240 /usr/local/lib/libopencv_imgproc.so.3.4.3
+visionser 392 root  mem       REG      179,2    54912 141238 /usr/local/lib/libopencv_highgui.so.3.4.3
+visionser 392 root  mem       REG      179,2   345420 141249 /usr/local/lib/libopencv_videostab.so.3.4.3
+visionser 392 root  mem       REG      179,2   430472 141242 /usr/local/lib/libopencv_objdetect.so.3.4.3
+visionser 392 root  mem       REG      179,2  3538616 141234 /usr/local/lib/libopencv_core.so.3.4.3
+visionser 392 root  mem       REG      179,2   408792 141247 /usr/local/lib/libopencv_video.so.3.4.3
+visionser 392 root  mem       REG      179,2    70184  30791 /usr/local/lib/libwiringPi.so.2.46
+visionser 392 root  mem       REG      179,2  1827956  10467 /usr/lib/arm-linux-gnueabihf/libcrypto.so.1.1
+visionser 392 root  mem       REG      179,2    21868  10445 /usr/lib/arm-linux-gnueabihf/libatomic.so.1.2.0
+visionser 392 root  mem       REG      179,2   327952  10582 /usr/lib/arm-linux-gnueabihf/libssl.so.1.1
+visionser 392 root  mem       REG      179,2    91884   1990 /lib/arm-linux-gnueabihf/libz.so.1.2.8
+visionser 392 root  mem       REG      179,2   154312   1597 /usr/lib/libuWS.so
+visionser 392 root  mem       CHR        1,1            1027 /dev/mem
+visionser 392 root  mem       REG      179,2    21868  10441 /usr/lib/arm-linux-gnueabihf/libarmmem.so
+visionser 392 root  mem       REG      179,2   138576   1859 /lib/arm-linux-gnueabihf/ld-2.24.so
+visionser 392 root    0r      CHR        1,3      0t0   1028 /dev/null
+visionser 392 root    1u     unix 0xab8d5800      0t0  10568 type=STREAM
+visionser 392 root    2u     unix 0xab8d5800      0t0  10568 type=STREAM
+visionser 392 root    3u      CHR        1,1      0t0   1027 /dev/mem
+visionser 392 root    4u  a_inode       0,11        0   6414 [eventpoll]
+visionser 392 root    5u     IPv6       9132      0t0    TCP *:5805 (LISTEN)
+visionser 392 root    6u     IPv4      12041      0t0    TCP *:5800 (LISTEN)
+visionser 392 root    7u     IPv4      12045      0t0    TCP *:5802 (LISTEN)
+visionser 392 root   10u     IPv4      24572      0t0    TCP 10.6.96.11:5800->10.6.96.5:30324 (ESTABLISHED)
+visionser 392 root   11u     IPv4      10857      0t0    TCP 10.6.96.11:37118->10.6.96.2:1735 (ESTABLISHED)
+visionser 392 root   12u      CHR       81,0      0t0  10858 /dev/video0
+visionser 392 root   13u     IPv6      25582      0t0    TCP 10.6.96.11:5805->10.6.96.5:30325 (ESTABLISHED)
