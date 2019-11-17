@@ -1,0 +1,124 @@
+\documentclass{article}
+\usepackage{fullpage}
+%\usepackage{fancyhdr}
+\usepackage{color}
+\usepackage{pdfpages}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	filecolor=magenta,      
+	urlcolor=blue,
+}
+
+\usepackage{listings}
+\lstset{
+	basicstyle=\small\ttfamily,
+	columns=fullflexible,
+	breaklines=true
+}
+
+%\pagestyle{fancy}
+
+\begin{document}
+	\begin{titlepage}
+	\begin{center}
+		
+	
+	\vspace*{1in}
+	{\Huge \textbf{ROSlight}}\\
+	\vspace{0.25in}
+	{\LARGE Publishing ROS Topics from the Limelight 2}\\
+	\vspace{0.5in}
+	{\Large Carlos Gross Jones}\\
+	\vspace{0.1in}
+	{\Large FRC Team 696}\\
+	\vspace{0.1in}
+	{\Large \today}\\
+\end{center}
+	
+\end{titlepage}
+
+\begin{abstract}
+	In this whitepaper, careful examination of the Limelight software is undertaken. After gaining root access to the OS, the core ROS code is compiled and installed on the Limelight. Finally, ROS packages are developed to publish the Limelight output data (target orientation, etc.) as ROS topics. 
+\end{abstract}
+
+\section{Introduction}
+\section{Gaining Access to the Limelight}
+\par First, of course, it was necessary to get a terminal and root access on the Limelight. \texttt{Nmap} showed that it did, in fact, have an SSH server listening on port 22. Knowing that the Limelight is essentially a Raspberry Pi, login was attempted using the default credentials (un: \texttt{pi}, pw: \texttt{raspberry}). This was unsuccessful.
+\par The next step was examination of the Limelight image (the imaging process being one of the few ways the user has to modify the Limelight software). At the time of writing, the most recent image is \texttt{LL\_2019\_71\_RELEASE}, downloaded from \url{https://www.mediafire.com/file/wjm1yb3ztr2zjen/LL\_2019\_71\_RELEASE.zip/file}. This is simply a zip archive containing \texttt{LL\_2019\_71\_RELEASE.img}. Expecting that the image would contain at least one root filesystem, binwalk\footnote{See \url{https://github.com/ReFirmLabs/binwalk}} was used to search for filesystem signatures: 
+\begin{verbatim}
+binwalk -B --include='linux ext filesystem' LL_2019_71_RELEASE.img
+\end{verbatim}
+which revealed an ext4 filesystem called ``rootfs'' at offset 0x3000000. After mounting the relevant part of the image file with 
+\begin{verbatim}
+mount -o loop,offset=50331648 LL_2019_71_RELEASE.img temp/
+\end{verbatim}
+the mountpoint did indeed appear to contain the root filesystem of the Limelight. At this point, all of the usual coldboot shenanigans are applicable; in this case, in addition to resetting the password on the \texttt{pi} account via \texttt{/etc/shadow}, a new user account (\texttt{carlos}) was created and given sudoer privileges. 
+\par A cursory glance revealed that the Limelight is running a relatively-stock Raspbian image:
+\begin{verbatim}
+~/data/Limelight/temp$ cat etc/os-release
+PRETTY_NAME="Raspbian GNU/Linux 9 (stretch)"
+NAME="Raspbian GNU/Linux"
+VERSION_ID="9"
+VERSION="9 (stretch)"
+ID=raspbian
+ID_LIKE=debian
+HOME_URL="http://www.raspbian.org/"
+SUPPORT_URL="http://www.raspbian.org/RaspbianForums"
+BUG_REPORT_URL="http://www.raspbian.org/RaspbianBugs"
+\end{verbatim}
+\par After unmounting the root filesystem, the (now-modified) \texttt{LL\_2019\_71\_RELEASE.img} was re-zipped and flashed onto the Limelight without incident. It was then possible to SSH into the Limelight as either \texttt{pi} or \texttt{carlos}, and to execute commands as root. 
+
+\section{Installing ROS}
+Once the Limelight can be accessed vis SSH, the normal ROS Kinetic Raspberry Pi installation instructions\footnote{\url{http://wiki.ros.org/ROSberryPi/Installing\%20ROS\%20Kinetic\%20on\%20the\%20Raspberry\%20Pi}} are successful. (Melodic would be preferable, but it seems to not yet be released for the armhf architecture.) As discussed in \S 3.3 of the instructions, the compilation (especially compiling \texttt{roscpp}) requires a lot of memory, and stalls when the 1 GB of RAM on the Pi is full. Given that the Raspberry Pi Compute Module 3 at the heart of the Limelight only has 4 GB of eMMC storage, and writing to it frequently is not preferred (see \S\ref{sec:emmc}), a flash drive was plugged into the limelight to be used as swap space. After editing \texttt{/etc/dphys-swapfile} to give 2 GiB of swap space on the flash drive, and running \texttt{/etc/init.d/dphys-swapfile restart} to initialize it, the compilation completed without incident. 
+
+\section{eMMC Precautions}
+\label{sec:emmc}
+\par The Raspberry Pi Compute Module 3 has 4 GB of eMMC storage soldered onto the module. This is different from the Raspberry Pi development boards, which generally have a slot to take a microSD card, and have no built-in secondary memory. As Tesla recently discovered to their chagrin\footnote{\url{https://hackaday.com/2019/10/17/worn-out-emmc-chips-are-crippling-older-teslas/}}, eMMC memory (which is, after all, flash) has a limited number of write cycles that it can tolerate. 
+\subsection{Recommendations}
+\begin{itemize}
+	\item Build ROS offboard
+	\item Make rootfs read-only (how to deal with pipeline editing?)
+\end{itemize}
+
+\section{Overview of Limelight Architecture}
+\subsection{Data Output}
+\par The data output from \texttt{visionserver} itself is in the form of a websocket at \texttt{ws://limelight.local:5805}. This websocket publishes a string of colon-delimited values, which looks like: 
+\begin{verbatim}
+status_update 0.000000:0.000000:0.000000:0.000000:5.073053:0:0:0:0:0:0:0:0:1:0.000000
+:0.000000:0.000000:0.000000:0.000000:0.000000
+\end{verbatim}
+The values are as follows:
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|c|c|l|}
+		\hline
+		\textbf{Index} & \textbf{Name} & \textbf{Description}\\ \hline
+		0 & tx & Horizontal angle (degrees) from crosshair to target\\ \hline
+		1 & ty & Vertical angle (degrees) from crosshair to target\\ \hline
+		2 & ta & Target area (\% of image)\\ \hline
+		3 & ts & Target rotation (degrees)\\ \hline
+		4 & tl & Pipeline latency (ms)\\ \hline
+		5 & tv & Whether there are any valid targets in image\\ \hline
+		6 & pipeline & \\ \hline
+		7 & ignoreNT & \\ \hline
+		8 & imageCount & \\ \hline
+		9 & interfaceNeedsRefresh & \\ \hline
+		10 & usingGRIP & \\ \hline
+		11 & pipelineImageCount & \\ \hline
+		12 & snapshotMode & \\ \hline
+		13 & hwType & \\ \hline
+		14 & trX & X translation component of solvePnP solution\\ \hline
+		15 & trY & Y translation component of solvePnP solution \\ \hline
+		16 & trZ & Z translation component of solvePnP solution \\ \hline
+		17 & roX & X rotation component of solvePnP solution \\ \hline
+		18 & roY & Y rotation component of solvePnP solution \\ \hline
+		19 & roZ & Z rotation component of solvePnP solution \\ \hline
+	\end{tabular}
+	\caption{Value mappings in \texttt{status\_update} string}
+\end{table}
+
+\section{Publishing Limelight Data as ROS Topics}
+
+\end{document}
