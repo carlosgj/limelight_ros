@@ -2,6 +2,7 @@
 \usepackage{fullpage}
 %\usepackage{fancyhdr}
 \usepackage{color}
+\usepackage{float}
 \usepackage{pdfpages}
 \usepackage{hyperref}
 \hypersetup{
@@ -44,9 +45,21 @@
 \end{abstract}
 
 \section{Introduction}
+\par ROS, the somewhat poorly-named Robot Operating System, is a set of tools, frameworks, and protocols to allow various software elements to interact with well-defined interfaces. ROS incorporates a standardized system of communication interfaces (such as messages and services), a build and dependency-management architecture, and a rich set of command-line tools for operation and development. ROS is increasingly popular in industry thanks to its easily-extensible architecture and the large variety of existing nodes; open-source packages implementing extended Kalman filtering, LIDAR SLAM, and computer vision, to give a few examples, are available. 
+\par While ROS still requires a fair amount of effort and software development knowledge to implement, it is beginning to be taken up in FRC\footnote{See \url{https://team900.org/labs/}}.
+\par The Limelight is well-known in the FRC community as an easy-to-use, prepackaged computer vision system. It captures video (at a high framerate) with its built-in camera, runs openCV pipelines onboard, and then outputs the numeric results over Network Tables. Under the hood, the Limelight is not terribly complex. There are essentially four elements:
+\begin{enumerate}
+	\item A Raspberry Pi computer;
+	\item A COTS camera;
+	\item A custom LED board;
+	\item And software/user interface. 
+\end{enumerate}
+The first three items are not difficult to come by. Many teams have implemented their own LED+camera solutions, with many employing the Raspberry Pi. What makes the Limelight popular is that it is a turnkey package and comes with an easy-to-use GUI, so that teams need very little knowledge or time to deploy an effective computer vision system.
+\par Given that the Limelight is essentially a Raspberry Pi, it would be straightforward to flash stock Raspbian (or another OS) onto it, install ROS, and develop a custom software stack from the ground up. The goal of this project is to leave the existing Limelight software untouched (or at least functional), while adding ROS communication capabilities. 
+ 
 \section{Gaining Access to the Limelight}
-\par First, of course, it was necessary to get a terminal and root access on the Limelight. \texttt{Nmap} showed that it did, in fact, have an SSH server listening on port 22. Knowing that the Limelight is essentially a Raspberry Pi, login was attempted using the default credentials (un: \texttt{pi}, pw: \texttt{raspberry}). This was unsuccessful.
-\par The next step was examination of the Limelight image (the imaging process being one of the few ways the user has to modify the Limelight software). At the time of writing, the most recent image is \texttt{LL\_2019\_71\_RELEASE}, downloaded from \url{https://www.mediafire.com/file/wjm1yb3ztr2zjen/LL\_2019\_71\_RELEASE.zip/file}. This is simply a zip archive containing \texttt{LL\_2019\_71\_RELEASE.img}. Expecting that the image would contain at least one root filesystem, binwalk\footnote{See \url{https://github.com/ReFirmLabs/binwalk}} was used to search for filesystem signatures: 
+\par First, of course, it is necessary to get a terminal and root access on the Limelight. \texttt{Nmap} showed that it did, in fact, have an SSH server listening on port 22. Knowing that the Limelight is essentially a Raspberry Pi, login was attempted using the default credentials (un: \texttt{pi}, pw: \texttt{raspberry}). This was unsuccessful.
+\par The next step was examination of the Limelight image (the imaging process being one of the few ways the user has to modify the software running on the Limelight). At the time of writing, the most recent image is \texttt{LL\_2019\_71\_RELEASE}, downloaded from \url{https://www.mediafire.com/file/wjm1yb3ztr2zjen/LL\_2019\_71\_RELEASE.zip/file}. This is simply a zip archive containing \texttt{LL\_2019\_71\_RELEASE.img}. Expecting that the image would contain at least one root filesystem, binwalk\footnote{See \url{https://github.com/ReFirmLabs/binwalk}} was used to search for filesystem signatures: 
 \begin{verbatim}
 binwalk -B --include='linux ext filesystem' LL_2019_71_RELEASE.img
 \end{verbatim}
@@ -71,26 +84,54 @@ BUG_REPORT_URL="http://www.raspbian.org/RaspbianBugs"
 \par After unmounting the root filesystem, the (now-modified) \texttt{LL\_2019\_71\_RELEASE.img} was re-zipped and flashed onto the Limelight without incident. It was then possible to SSH into the Limelight as either \texttt{pi} or \texttt{carlos}, and to execute commands as root. 
 
 \section{Installing ROS}
-Once the Limelight can be accessed vis SSH, the normal ROS Kinetic Raspberry Pi installation instructions\footnote{\url{http://wiki.ros.org/ROSberryPi/Installing\%20ROS\%20Kinetic\%20on\%20the\%20Raspberry\%20Pi}} are successful. (Melodic would be preferable, but it seems to not yet be released for the armhf architecture.) As discussed in \S 3.3 of the instructions, the compilation (especially compiling \texttt{roscpp}) requires a lot of memory, and stalls when the 1 GB of RAM on the Pi is full. Given that the Raspberry Pi Compute Module 3 at the heart of the Limelight only has 4 GB of eMMC storage, and writing to it frequently is not preferred (see \S\ref{sec:emmc}), a flash drive was plugged into the limelight to be used as swap space. After editing \texttt{/etc/dphys-swapfile} to give 2 GiB of swap space on the flash drive, and running \texttt{/etc/init.d/dphys-swapfile restart} to initialize it, the compilation completed without incident. 
+Once the Limelight can be accessed vis SSH, the normal ROS Kinetic Raspberry Pi installation instructions\footnote{\url{http://wiki.ros.org/ROSberryPi/Installing\%20ROS\%20Kinetic\%20on\%20the\%20Raspberry\%20Pi}} are successful. (Melodic would be preferable, but it seems to not yet be released for the \texttt{armhf} architecture.) As discussed in \S 3.3 of the instructions, the compilation (especially compiling \texttt{roscpp}) requires a lot of memory, and stalls when the 1 GB of RAM on the Pi is full. Given that the Raspberry Pi Compute Module 3 at the heart of the Limelight only has 4 GB of eMMC storage, and writing to it frequently is not preferred (see \S\ref{sec:emmc}), a flash drive was plugged into the limelight to be used as swap space. After editing \texttt{/etc/dphys-swapfile} to give 2 GiB of swap space on the flash drive, and running 
+\begin{verbatim}
+/etc/init.d/dphys-swapfile restart
+\end{verbatim}
+to initialize it, the compilation completed without incident. 
 
 \section{eMMC Precautions}
 \label{sec:emmc}
-\par The Raspberry Pi Compute Module 3 has 4 GB of eMMC storage soldered onto the module. This is different from the Raspberry Pi development boards, which generally have a slot to take a microSD card, and have no built-in secondary memory. As Tesla recently discovered to their chagrin\footnote{\url{https://hackaday.com/2019/10/17/worn-out-emmc-chips-are-crippling-older-teslas/}}, eMMC memory (which is, after all, flash) has a limited number of write cycles that it can tolerate. 
-\subsection{Recommendations}
-\begin{itemize}
-	\item Build ROS offboard
-	\item Make rootfs read-only (how to deal with pipeline editing?)
-\end{itemize}
+\par The Raspberry Pi Compute Module 3 has 4 GB of eMMC storage soldered onto the module. This is different from the Raspberry Pi development boards, which generally have a slot to take a microSD card, and have no built-in secondary memory. As Tesla recently discovered to their chagrin\footnote{\url{https://hackaday.com/2019/10/17/worn-out-emmc-chips-are-crippling-older-teslas/}}, eMMC memory (which is, after all, flash) has a limited number of write cycles that it can tolerate. This suggests certain measures that might be taken to prevent Limelights from being similarly crippled\footnote{Note, however, that while flash has limited program/erase cycles, the limit is comparatively large-- generally at least on the order of $10^3$. Furthermore, eMMC controllers incorporate wear-leveling algorithms to attempt to write to all of the blocks on the device at approximately the same rate. Finally, the actual powered-on time of a Limelight is usually small compared to, say, a car. Therefore, this issue is not urgent; it may manifest after many seasons of use of the same Limelight.}.
+\par Most importantly, build ROS offboard, as much as possible. The compilation process involves writing many temporary files to disk, which degrades flash memory. Building ROS packages from source often requires the compilation of a large number of dependencies. After the initial compilation of \texttt{ros\_comm} on the Limelight itself (although using an external flash drive as described above), a normal Raspberry Pi 3B+ was used as a ``build server'' to compile the \texttt{limelight\_ros} package and dependencies. As opposed to the Compute Module 3 in the Limelight, the Pi has no built-in eMMC, but has a microSD card slot. In addition to providing much more disk space, the SD card can be replaced if it fails. Since the Raspberry Pi 3B+ and Compute Module 3 have the same architecture (\texttt{armhf}), binaries compiled on the Pi can simply be SCPed to the Limelight and used. In the case of ROS dependencies, it was possible to \texttt{tar} the whole \texttt{/opt/ros/kinetic} directory and move it over to the Limelight. 
+\par Another measure commonly taken to avoid flash wear in embedded devices is to mount the filesystem read-only. This is not done on the Limelight (although \texttt{/boot} is mounted read-only). There are a couple of potential problems that arise when the root filesystem is mounted as read-only. The largest one is that processes can no longer write log files to \texttt{/var/log} (or anywhere else). Since processes generally do not like to be denied access to their logfiles, it is common to use \texttt{tmpfs} or similar to mount a ramdisk at \texttt{/var/log}. This allows logs to be written, although they are not persisted through boot cycles. 
+\par In the case of the Limelight, a greater problem is pipeline editing. Pipeline definition files are stored as \texttt{/home/pi/visionserver/n.vpr}, where $n$ is an index in $[0,10)$. Similarly, some settings such as team number are stored in the \texttt{/home/pi/visionserver/master.settings} file. Thus, mounting the root filesystem read-only would prevent editing of Limelight and pipeline settings. 
+\par Perhaps a better solution would be mount a tmpfs at \texttt{/var/log} and any other locations with logfiles, and leave the root filesystem read-write. This would prevent constant log writes to eMMC, while still allowing users to edit the vision processing settings normally. 
 
 \section{Overview of Limelight Architecture}
-\subsection{Data Output}
-\par The data output from \texttt{visionserver} itself is in the form of a websocket at \texttt{ws://limelight.local:5805}. This websocket publishes a string of colon-delimited values, which looks like: 
+\subsection{Components}
+\subsubsection{Visionserver}
+\par The primary binary associated with the actual Limelight vision processing is \texttt{/home/pi/visionserver/visionserver}. This program, which is started at boot, captures video, runs the pipeline, publishes data to Network Tables, streams video through various ports (see \S \ref{sec:ports}), and opens a websocket server to interact with the web interface. 
+
+\subsubsection{Networkresponder}
+\par Another binary, \texttt{/home/pi/visionserver/networkresponder}, also runs in the background. Based on functional testing and decompilation, its only purpose seems to be hostname and IP discovery. If a UDP packet with the payload \texttt{LLPhoneHome} is sent to port 5809 on the limelight, a string like 
 \begin{verbatim}
-status_update 0.000000:0.000000:0.000000:0.000000:5.073053:0:0:0:0:0:0:0:0:1:0.000000
+h:limelight:ip:10.6.96.11
+\end{verbatim}
+(that is, the Limelight's hostname and IP) will be sent back to port 5809 of the host which sent the first packet. 
+
+\subsubsection{Apache}
+\par An Apache2 server is started to serve the static files that make up the web interface. This media, CSS, and Javascript can be found in \texttt{/var/www/html} as usual. 
+
+\subsection{Ports}
+\label{sec:ports}
+The Limelight listens on the following ports (in addition to the normal SSH, DHCP, and Avahi/zeroconf ports):
+\begin{itemize}
+\item 5800: Processed video stream (with overlays etc.)
+\item 5801: Web interface
+\item 5802: Raw camera stream
+\item 5805: Websocket
+\item 5809: \texttt{networkresponder}
+\end{itemize}
+
+\subsection{Data Output}
+\par In order to push data to the web interface, \texttt{visionserver} runs a websocket server at \texttt{ws://limelight.local:5805}. This websocket publishes, among other things, a string of colon-delimited values, which looks like: 
+\begin{verbatim}
+status_update 3.698395:4.292603:1.737678:-82.568588:6.157673:1:0:0:0:0:0:0:0:1:0.000000
 :0.000000:0.000000:0.000000:0.000000:0.000000
 \end{verbatim}
-The values are as follows:
-\begin{table}[h!]
+The meanings of these values are as follows:
+\begin{table}[H]
 	\centering
 	\begin{tabular}{|c|c|l|}
 		\hline
@@ -101,13 +142,13 @@ The values are as follows:
 		3 & ts & Target rotation (degrees)\\ \hline
 		4 & tl & Pipeline latency (ms)\\ \hline
 		5 & tv & Whether there are any valid targets in image\\ \hline
-		6 & pipeline & \\ \hline
-		7 & ignoreNT & \\ \hline
+		6 & pipeline & Current pipeline index\\ \hline
+		7 & ignoreNT & Whether NT-specified pipeline is being ignored\\ \hline
 		8 & imageCount & \\ \hline
 		9 & interfaceNeedsRefresh & \\ \hline
 		10 & usingGRIP & \\ \hline
 		11 & pipelineImageCount & \\ \hline
-		12 & snapshotMode & \\ \hline
+		12 & snapshotMode & Whether input is camera or snapshot\\ \hline
 		13 & hwType & \\ \hline
 		14 & trX & X translation component of solvePnP solution\\ \hline
 		15 & trY & Y translation component of solvePnP solution \\ \hline
@@ -117,8 +158,61 @@ The values are as follows:
 		19 & roZ & Z rotation component of solvePnP solution \\ \hline
 	\end{tabular}
 	\caption{Value mappings in \texttt{status\_update} string}
+	\label{tab:statusupdate}
 \end{table}
 
-\section{Publishing Limelight Data as ROS Topics}
+This websocket is the only interface between the web GUI presented to the user and the Limelight (other than the video stream itself). As such, any controls and feedback available to the user from the GUI is accessible from the websocket, and some other items that are not presented to the user. For example, the client will send the string
+\begin{verbatim}
+flush_settings 0*#
+\end{verbatim} 
+to cause \texttt{visionserver} to flush the current pipeline settings to one of the \texttt{.vpr} files. \texttt{visionserver} will then respond on the websocket with 
+\begin{verbatim}
+flushed_settings
+\end{verbatim}
+To turn the LEDs on for the current pipeline, the GUI sends the string
+\begin{verbatim}
+set_setting 0*pipeline_led_enabled:1#
+\end{verbatim}
+or another value:
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|l|}
+		\hline
+		\textbf{Value} & \textbf{Meaning}\\ \hline
+		0 & LEDs off \\ \hline
+		1 & LEDs on \\ \hline
+		2 & Left LEDs on \\ \hline
+		3 & Right LEDs on \\ \hline
+	\end{tabular}
+    \caption{LED Control Values}
+    \label{tab:led}
+\end{table}
+\par Further websocket activity can be investigated by using the debug functionality of a web browser to monitor the websocket messages while interacting with the web GUI. 
+\section{ROS Interface}
+\par As proof-of-concept, two ROS components have been created: a publisher for output data, and a service for controlling the LEDs. This code can be found on Github\footnote{\url{https://github.com/carlosgj/limelight\_ros}}.
+\par The publisher (\texttt{websocketpublish.py}) connects to the websocket, reformats the data, and publishes it as \texttt{LimelightStamped.msg}:
+\begin{verbatim}
+Header header
+geometry_msgs/Quaternion targetLocation
+std_msgs/Bool hasTargets
+std_msgs/Float32 targetArea
+geometry_msgs/Transform cameraPose
+std_msgs/Byte pipeline
+\end{verbatim}
+\begin{itemize}
+	\item \texttt{header}: Standard header
+	\item \texttt{targetLocation}: The angular location of the target, assuming that \texttt{tx}, \texttt{ty}, and \texttt{ts} correspond to rotations about the x, y, and z axes respectively 
+	\item \texttt{hasTargets}: Reflects \texttt{tv} value
+	\item \texttt{targetArea}: A float on $[0,1]$ giving the ratio of target area to image area (derived from \texttt{ta})
+	\item \texttt{cameraPose}: A \texttt{Transform} generated from the solvePnP solution
+	\item \texttt{pipeline}: Index of the current pipeline
+\end{itemize}
+\par In addition, a service (\texttt{/LED}) was created. This simply accepts an integer on $[0,3]$ and uses it to set the LED state according to Table \ref{tab:led}. 
+\section{Future Work}
+\begin{itemize}
+	\item Use the pipeline latency value to try to correct the header timestamp to reflect when the image was actually taken
+	\item Attempt to extract values for \texttt{tshort}, etc.; these are currently not published in the \texttt{status\_update} websocket message, and thus can only be read via Network Tables
+	\item Implement services for setting the pipeline, etc.
+\end{itemize}
 
 \end{document}
